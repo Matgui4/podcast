@@ -1,0 +1,261 @@
+body {
+    background: rgb(204, 174, 238);
+    background: linear-gradient(180deg, rgba(204, 174, 238, 1) 31%, rgba(148, 233, 223, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rotate {
+    
+    background-color: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+    animation-name: monteLeSonPePeHP;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+.test1{
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: black;
+    height: 100px;
+    width: 90%;
+    position: relative;
+    bottom: -2em;
+    opacity: 70%;
+}
+.test2{
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 100%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 29%);
+    background-color: black;
+    height: 80px;
+    width: 250px;
+    position: relative;
+    bottom: -7em;
+    opacity: 30%;
+}
+.fond {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.fond1 {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation-timing-function: ease-in;
+    animation-name: jeDivague;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    opacity: 50%;
+}
+
+@keyframes monteLeSonPePeHP {
+    0% {
+        background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        clip-path: polygon(0% 15%, 0 40%, 15% 0%, 85% 0%, 100% 39%, 100% 15%, 100% 85%, 100% 100%, 51% 93%, 64% 85%, 0 100%, 0% 85%);
+    }
+
+    50% {
+        background: linear-gradient(45deg, rgb(233, 127, 173) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        clip-path: polygon(0% 15%, 68% 54%, 15% 0%, 85% 0%, 57% 34%, 100% 15%, 100% 85%, 35% 43%, 85% 100%, 15% 100%, 43% 60%, 0% 85%);
+
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    85% {
+
+        background: linear-gradient(180deg, rgb(136, 25, 73) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        clip-path: polygon(10% 25%, 30% 50%, 25% 10%, 75% 20%, 34% 55%, 100% 15%, 100% 85%, 61% 62%, 85% 100%, 15% 100%, 86% 30%, 0% 85%);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        clip-path: polygon(0% 15%, 0 40%, 15% 0%, 85% 0%, 100% 39%, 100% 15%, 100% 85%, 100% 100%, 51% 93%, 64% 85%, 0 100%, 0% 85%);
+        background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+
+    }
+
+}
+
+@keyframes jeDivague {
+    30% {
+        background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation-timing-function: ease-in;
+        transform: scale(1);
+        rotate: 60deg;
+
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+        transform: scale(0.5);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    50% {
+        background: linear-gradient(45deg, rgb(233, 127, 173) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+
+
+    65% {
+
+        background: linear-gradient(180deg, rgb(136, 25, 73) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+
+    }
+
+    85% {
+        background: linear-gradient(45deg, rgb(233, 127, 173) 0%, rgba(133, 58, 119, 1) 24%, rgba(46, 58, 120, 1) 70%, rgba(148, 187, 233, 1) 100%);
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        rotate: 360deg;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    100% {
+        rotate: 360deg;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+}
+
+
+.fondPodcast {
+    background: rgb(31, 49, 71);
+    background: linear-gradient(130deg, rgba(31, 49, 71, 1) 0%, rgba(214, 73, 230, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border: 10px;
+    border-top: 1em solid black;
+    border-left: 1em double black;
+    border-bottom: 0.2em solid black;
+    border-right: 1em double black;
+    border-radius: 0em 0em 1em 1em;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+}
+
+.titre {
+    font-size: 4em;
+    color: rgb(252, 176, 69);
+    background: linear-gradient(180deg, #fcb045 17%, rgba(249, 150, 255, 0.6951155462184874) 64%, rgba(0, 0, 0, 0.695) 78%, rgba(0, 0, 0, 1) 100%);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 85%, 85% 100%, 65% 85%, 0% 85%);
+    border: 2px solid black;
+}
+
+.text {
+    margin: 1em;
+    font-size: 2em;
+    color: black;
+    background: linear-gradient(-130deg, rgba(31, 49, 71, 1) 0%, rgba(214, 73, 230, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border: 0.2em inset rgba(77, 7, 7, 0.5);
+    border-bottom-right-radius: 1em;
+
+}
+
+
+.date {
+    font-size: 1em;
+    color: burlywood;
+    font-style: italic;
+    background-color: black;
+    border: 1px solid white;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titrePost {
+    font-size: 2.5em;
+    color: rgb(252, 176, 69);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+
+}
+
+.boutonAudio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/Plan\ de\ travail\ 2.png");
+    height: 6em;
+    width: 5em;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.conteurAudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.txtAudio {
+    color: black;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+
+}
